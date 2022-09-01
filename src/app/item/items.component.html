@@ -1,11 +1,111 @@
-<ActionBar title="My App"> </ActionBar>
+<ActionBar backgroundColor="#9ED2C6">
+<Label
+  textAlign="center"
+  text="Photo's"
+  color="white"
+  fontWeight="bold"
+  fontSize="19px"
+></Label>
+</ActionBar>
 
-<GridLayout>
-  <ListView [items]="items">
-    <ng-template let-item="item">
-      <StackLayout [nsRouterLink]="['/item', item.id]">
-        <Label [text]="item.name"></Label>
-      </StackLayout>
-    </ng-template>
-  </ListView>
-</GridLayout>
+<StackLayout orientation="vertical" backgroundColor="#9ED2C6">
+<label text="Recent Photo's" fontSize="20px" fontStyle="italic"></label>
+<StackLayout
+  orientation="horizontal"
+  backgroundColor="white"
+  height="20%"
+  width="100%"
+  margin="10"
+>
+  <Image
+    src="https://picsum.photos/200"
+    height="100"
+    width="100"
+    margin="10"
+  ></Image>
+  <Image
+    src="https://picsum.photos/200"
+    height="100"
+    width="100"
+    margin="10"
+  ></Image>
+  <Image
+    src="https://picsum.photos/200"
+    height="100"
+    width="100"
+    margin="10"
+  ></Image>
+</StackLayout>
+
+<label text="Photograph's" fontSize="20px" fontStyle="italic"></label>
+<StackLayout
+  orientation="vertical"
+  backgroundColor="white"
+  height="35%"
+  width="100%"
+  margin="10"
+>
+  <Stacklayout orientation="horizontal" padding="10">
+    <Image
+      src="https://picsum.photos/200"
+      height="70"
+      width="70"
+      margin="10"
+    ></Image>
+    <Image
+      src="https://picsum.photos/200"
+      height="70"
+      width="70"
+      margin="10"
+    ></Image>
+    <Image
+      src="https://picsum.photos/200"
+      height="70"
+      width="70"
+      margin="10"
+    ></Image>
+    <Image
+      src="https://picsum.photos/200"
+      height="70"
+      width="70"
+      margin="10"
+    ></Image>
+  </Stacklayout>
+  <Stacklayout orientation="horizontal" padding="10">
+    <Image
+      src="https://picsum.photos/200"
+      height="70"
+      width="70"
+      margin="10"
+    ></Image>
+    <Image
+      src="https://picsum.photos/200"
+      height="70"
+      width="70"
+      margin="10"
+    ></Image>
+    <Image
+      src="https://picsum.photos/200"
+      height="70"
+      width="70"
+      margin="10"
+    ></Image>
+    <Image
+      src="https://picsum.photos/200"
+      height="70"
+      width="70"
+      margin="10"
+    ></Image>
+  </Stacklayout>
+</StackLayout>
+<TextField
+  hint="Search"
+  color="orangered"
+  backgroundColor="lightyellow"
+  height="45"
+  width="200"
+  paddingRight="20"
+>
+</TextField>
+<Button text="Tap me!" width="200" margin="20"></Button>
+</StackLayout>
